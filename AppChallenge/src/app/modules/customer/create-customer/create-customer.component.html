@@ -1,3 +1,65 @@
-<p>
-  create-customer works!
-</p>
+<app-navbar></app-navbar>
+<div class="container mt-4">
+  <div class="row">
+    <div class="card text-center">
+      <div class="card-body">
+        <h3>Add Customer</h3>
+        <!-- Form -->
+        <form class="mt-4">
+          <div class="mb-3 flex-column d-flex align-items-start">
+            <label for="name" class="form-label fw-bolder">Name</label>
+            <input
+              type="text"
+              name=""
+              id="name"
+              class="form-control"
+              placeholder="Name"
+            />
+          </div>
+          <div class="mb-3 flex-column d-flex align-items-start">
+            <label for="lastname" class="form-label fw-bolder">Last name</label>
+            <input
+              type="text"
+              name=""
+              id="lastname"
+              class="form-control"
+              placeholder="Last name"
+            />
+          </div>
+          <div class="mb-3 flex-column d-flex align-items-start">
+            <label for="age" class="form-label fw-bolder">Age</label>
+            <input
+              type="text"
+              name=""
+              id="age"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="mb-3 flex-column d-flex align-items-start">
+            <label for="birth" class="form-label fw-bolder"
+              >Date of Birth</label
+            >
+            <input
+              type="text"
+              name=""
+              id="birth"
+              class="form-control"
+              placeholder="dd-mm-yyyy"
+            />
+          </div>
+          <!-- Buttons -->
+          <div class="row m-1 d-flex justify-content-between">
+            <button
+              class="col btn me-3 btn-danger"
+              routerLink="/list-customers"
+            >
+              Cancel
+            </button>
+            <button class="col btn btn-primary">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
