@@ -1,0 +1,25 @@
+[debug] [2022-04-18T05:50:33.510Z] ----------------------------------------------------------------------
+[debug] [2022-04-18T05:50:33.514Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-04-18T05:50:33.515Z] CLI Version:   10.6.0
+[debug] [2022-04-18T05:50:33.515Z] Platform:      win32
+[debug] [2022-04-18T05:50:33.515Z] Node Version:  v16.14.2
+[debug] [2022-04-18T05:50:33.517Z] Time:          Mon Apr 18 2022 00:50:33 GMT-0500 (hora estándar de Perú)
+[debug] [2022-04-18T05:50:33.517Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-18T05:50:33.645Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-18T05:50:33.646Z] > authorizing via signed-in user (mirianalejandra1996@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Miria\Desktop\angulardef\Angular-app\AppChallenge
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+

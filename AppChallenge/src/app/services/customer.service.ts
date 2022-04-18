@@ -11,21 +11,21 @@ export class CustomerService {
 
   getCustomers(): Observable<any[]> {
     // return this.http.get<any[]>("/customers/customers/listclientes")
-    return this.http.get<any[]>("/customers/listclientes")
+    return this.http.get<any[]>("/customers/testst")
   }
   
   addCustomer(customer: any): Observable<any>{
     // return this.http.post<any>("/customers/customers/creacliente", customer);
-    return this.http.post<any>("/customers/creacliente", customer);
+    return this.http.post<any>("/customers/testse", customer);
   }
 
   getKpi(): Observable<any>{
       // return this.http.get<any>("/customers/kpideclientes")
-      return this.http.get<any>("/kpideclientes")
+      return this.http.get<any>("/testst")
   }
 
   getCustomerById(id: string): Observable<any> {
-    return this.http.get<any>(`/customers/getById/${id}`)
+    return this.http.get<any>(`/customers/testest/${id}`)
     // return this.http.get<any>(`/customers/customers/getById/${id}`)
   }
   // updateCustomerById(): Observable<any> {
