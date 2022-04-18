@@ -1,0 +1,11 @@
+{
+    "/customers" : {
+        "target" : "https://challenge-microservice.azurewebsites.net",
+        "secure" : true,
+        "changeOrigin" : true,
+        "logLevel" : "debug",
+        "pathRewrite": {
+            "^/customers": ""
+        }
+    }
+}

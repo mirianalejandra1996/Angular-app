@@ -7,19 +7,19 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit, AfterViewInit {
   
-  title:string = 'app';
+  title:string = 'challenge';
   saludo:any;
   constructor() {
-    console.log('constructor')
-    this.title = 'esto fue cambiado'
+    console.log('CONSTRUCTOR test, this execute first')
+    this.title = 'challenge modified'
   }
 
   ngOnInit(): void {
-    console.log('esto e init')
+    console.log('INIT test, this execute first')
   }
-
+  
   ngAfterViewInit(): void {
-    console.log('esto es despues del init')
+  console.log('ngAfterViewInit test, this execute third')
   }
 
 

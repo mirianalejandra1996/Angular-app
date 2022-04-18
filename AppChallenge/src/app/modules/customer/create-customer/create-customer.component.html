@@ -3,49 +3,93 @@
   <div class="row">
     <div class="card text-center">
       <div class="card-body">
-        <h3>Add Customer</h3>
+        <h3>{{ title }}</h3>
+        <span
+          *ngIf="submitted && createCustomer.invalid"
+          class="badge rounded-pill bg-danger"
+          >All fields must be filled</span
+        >
         <!-- Form -->
-        <form class="mt-4">
+        <form
+          class="mt-4"
+          [formGroup]="createCustomer"
+          (ngSubmit)="addCustomer()"
+        >
           <div class="mb-3 flex-column d-flex align-items-start">
-            <label for="name" class="form-label fw-bolder">Name</label>
+            <!-- <label for="name" class="form-label fw-bolder">Name</label>
+            <span class="text-danger">*</span> -->
+
+            <div class="container d-flex p-0">
+              <label for="name" class="form-label fw-bolder">Name</label>
+              <span class="text-danger">*</span>
+            </div>
             <input
               type="text"
               name=""
               id="name"
               class="form-control"
               placeholder="Name"
+              formControlName="name"
             />
           </div>
           <div class="mb-3 flex-column d-flex align-items-start">
-            <label for="lastname" class="form-label fw-bolder">Last name</label>
+            <div class="container d-flex p-0">
+              <label for="lastname" class="form-label fw-bolder"
+                >Last name</label
+              >
+              <span class="text-danger">*</span>
+            </div>
             <input
               type="text"
               name=""
               id="lastname"
               class="form-control"
               placeholder="Last name"
+              formControlName="lastname"
             />
           </div>
           <div class="mb-3 flex-column d-flex align-items-start">
-            <label for="age" class="form-label fw-bolder">Age</label>
+            <div class="container d-flex p-0">
+              <label for="dni" class="form-label fw-bolder">Dni</label>
+              <span class="text-danger">*</span>
+            </div>
+            <input
+              type="text"
+              name=""
+              id="dni"
+              class="form-control"
+              placeholder="xxxxxxxx"
+              formControlName="dni"
+            />
+          </div>
+          <div class="mb-3 flex-column d-flex align-items-start">
+            <div class="container d-flex p-0">
+              <label for="age" class="form-label fw-bolder">Age</label>
+              <span class="text-danger">*</span>
+            </div>
             <input
               type="text"
               name=""
               id="age"
               class="form-control"
               placeholder="Age"
+              formControlName="age"
             />
           </div>
           <div class="mb-3 flex-column d-flex align-items-start">
-            <label for="birth" class="form-label fw-bolder"
-              >Date of Birth</label
-            >
+            <div class="container d-flex p-0">
+              <label for="birth" class="form-label fw-bolder"
+                >Date of Birth</label
+              >
+              <span class="text-danger">*</span>
+            </div>
             <input
               type="text"
               name=""
               id="birth"
               class="form-control"
               placeholder="dd-mm-yyyy"
+              formControlName="birth"
             />
           </div>
           <!-- Buttons -->
@@ -56,7 +100,7 @@
             >
               Cancel
             </button>
-            <button class="col btn btn-primary">Add</button>
+            <button class="col btn btn-primary" type="submit">Add</button>
           </div>
         </form>
       </div>

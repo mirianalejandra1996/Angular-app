@@ -8,6 +8,8 @@ const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'list-customers', component: CustomersListComponent},
   {path: 'create-customer', component: CreateCustomerComponent},
+  {path: 'customer-detail/:id', component: CreateCustomerComponent},
+  // {path: 'edit-customer/:id', component: CreateCustomerComponent},
   {path: '**', redirectTo: '/list-customers', pathMatch: 'full' }
 ]
 
