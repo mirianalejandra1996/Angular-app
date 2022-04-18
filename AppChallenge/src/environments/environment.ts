@@ -5,12 +5,13 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyA989mFA1gjs7keZAWCaiG23HJ_CjPLiQ0",
-    authDomain: "full-stack-challenge-oechsle.firebaseapp.com",
-    projectId: "full-stack-challenge-oechsle",
-    storageBucket: "full-stack-challenge-oechsle.appspot.com",
-    messagingSenderId: "413209737716",
-    appId: "1:413209737716:web:60df7a93493719380fa1a1"
+    apiKey: "AIzaSyBeCTHKZjvfhhXLwKDsmj1hG1wATJEWiJk",
+    authDomain: "prueba-3752e.firebaseapp.com",
+    projectId: "prueba-3752e",
+    storageBucket: "prueba-3752e.appspot.com",
+    messagingSenderId: "188110963082",
+    appId: "1:188110963082:web:075bf3520b507d947d0873",
+    measurementId: "G-M06RK0ZW5P"
   }
 };
 
